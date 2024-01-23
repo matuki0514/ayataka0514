@@ -1,0 +1,287 @@
+body {
+  font-family:"Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+height: 100vh;
+}
+
+
+#particles-js{
+	position:fixed;/*描画固定*/
+	z-index:-1;/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+  background-image: url("https://4.bp.blogspot.com/-9DwAUh0Gyk0/VQRM983j4QI/AAAAAAAATr0/0NqijPI4dv4/s1600/hoshizora-kabegami-2015-04.jpg");
+background-size: cover;
+}
+
+#wrapper{
+	position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width:100%;
+	height: 100%;
+}
+
+
+.header{
+position: fixed;
+top:0;
+height: 80px;
+width: 100%;
+font-family: "cursive";
+color: #fff;
+
+background: Linear-gradient(to right,black,black);
+}
+
+.header-logo{
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.header-list li{
+
+margin-top: 10px;
+float: left;
+list-style: none;
+font-size: 20px;
+color: #fff;
+}
+span{
+  font-size: 40px;
+  float: right;
+  color: #ffff33;
+  margin-right:  20px;
+  margin-top: 10px;
+}
+
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+h5{
+  padding-top: 100px;
+  text-align: center;
+}
+
+
+  .main-logo {
+padding-top: 100px;
+margin: 10;
+font-size: 40px;
+border-bottom: 4px silver;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  text-align: center;
+  position: relative;
+  width: 100%;
+height: 50px;
+z-index: -1;
+}
+h2{
+border: solid 2px;
+  border-image: linear-gradient(to right,silver,silver);
+  padding-top: 10px;
+}
+i{
+  font-size: 50px;
+  color: #ffff33;
+margin-bottom: 10px;
+}
+
+
+
+.prologue {
+    margin:  0;                 /* デフォルトCSS打ち消し */
+    font-size:  70px;           /* 文字サイズ指定 */
+    position:  relative;        /* 位置調整 */
+    margin-bottom: 15px;        /* 周りの余白指定 */
+    font-family: "Impact";
+
+z-index: -1;
+}
+
+.wrapper2  {
+position: relative;
+
+  display: block;
+  float: left;
+  transform: translate(-50%, -50%);
+
+}
+
+.button2 {
+  position: absolute;
+  left: 400px;
+padding: 0.5em 1.5em;
+margin-top: 80px;
+margin-left: 10px;
+  text-decoration: none;
+  color: white;
+
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+
+  }
+
+
+
+  &:hover {
+    background-color: $color;
+    color: yellow;
+    border-bottom: 4px solid darken($color, 10%);
+    &:before {
+      transform: skewX(-45deg) translateX(13.5em);
+     transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+
+.prologue::first-letter{
+  background-color: #ffff33;  /* 背景色指定 */
+  border-radius:  50%;        /* 丸くする */
+  padding: 10px 10px;  /* 余白指定 */
+  margin: 10px 10px;
+  font-size: 150px;            /* 文字サイズ指定 */
+}
+
+
+
+
+
+h1.text{
+  font-size: 50px;
+}
+.border2 {
+border: solid 3px silver;
+}
+ p{
+margin: 40px;
+font-size: 40px;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+.slider{
+padding:  0 10px;
+z-index: -1;
+}
+
+.test-slick {
+    width: 90%;
+    max-width: 100%;
+    margin:10px auto;
+    z-index: -1;
+}
+
+.test-slick__item {
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+
+.test-slick__item img {
+    height: auto;
+    width: 100%;
+}
+
+
+.button {
+left:550px;
+width: 400px;
+  padding: 0.05em 1em;
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: black;
+  display: inline-block;
+  border-radius: 0.2em;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+text-align: center;
+z-index: -1;
+  &:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+
+  }
+
+
+
+  &:hover {
+    background-color: $color;
+    border-bottom: 4px solid darken($color, 10%);
+    &:before {
+      transform: skewX(-45deg) translateX(13.5em);
+     transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.youtube3{
+  margin:50px;
+  text-align: center;
+}
+
+
+
+ .footer-logo p{
+  font-size: 25px;
+  margin: 10px;
+  text-align: center;
+
+}
+.end{
+  text-align: center;
+  font-size: 40px;
+}
+.footer {
+
+    color: #fff;
+    text-align: center;
+  bottom: 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    padding: 30px;
+height: 40px;
+}
